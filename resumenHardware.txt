@@ -1,0 +1,3 @@
+placa madre
+placa de sonido
+teclado

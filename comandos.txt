@@ -1,0 +1,73 @@
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % git init
+Initialized empty Git repository in /Users/fernandaojeda/Desktop/20230510-FernandaOjeda/.git/
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % git remote add origin https://github.com/feroh/20230605-FernandaOjeda.git
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % git remote -v
+origin  https://github.com/feroh/20230605-FernandaOjeda.git (fetch)
+origin  https://github.com/feroh/20230605-FernandaOjeda.git (push)
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % touch comandos.txt main.js index.html
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % git add .
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % git commit -m "1 de FernandaOjeda"
+[main (root-commit) 4e46fda] 1 de FernandaOjeda
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 comandos.txt
+ create mode 100644 index.html
+ create mode 100644 main.js
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 242 bytes | 242.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/feroh/20230605-FernandaOjeda.git
+ * [new branch]      main -> main
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % git branch feature
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % git branch
+  feature
+* main
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % git switch feature
+Switched to branch 'feature'
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % git branch
+* feature
+  main
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % mkdir Hardware Software SeguridadInformatica
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % touch Hardware/resumen.txt Software/resumen.txt SeguridadInformatica/resumen.txt
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % ls  
+Hardware                SeguridadInformatica    Software                comandos.txt            index.html              main.js
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % cd Hardware
+fernandaojeda@MacBook-Pro-de-Fernanda Hardware % ls
+resumen.txt
+fernandaojeda@MacBook-Pro-de-Fernanda Hardware % cd ..
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % ls
+Hardware                SeguridadInformatica    Software                comandos.txt            index.html              main.js
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % git add .
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % git commit -m "2 de FernandaOjeda"
+[feature 714e33e] 2 de FernandaOjeda
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hardware/resumen.txt
+ create mode 100644 SeguridadInformatica/resumen.txt
+ create mode 100644 Software/resumen.txt
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % git push origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 378 bytes | 378.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/feroh/20230605-FernandaOjeda/pull/new/feature
+remote: 
+To https://github.com/feroh/20230605-FernandaOjeda.git
+ * [new branch]      feature -> feature
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % git switch main
+Switched to branch 'main'
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % git branch
+  feature
+* main
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % ls
+comandos.txt    index.html      main.js
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % mv main.js resumenHardware.txt
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % ls
+comandos.txt            index.html              resumenHardware.txt
+fernandaojeda@MacBook-Pro-de-Fernanda 20230510-FernandaOjeda % mv index.html resumenSoftware.txt
